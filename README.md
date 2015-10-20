@@ -1,8 +1,7 @@
-AngularJS and Skeleton boilerplate
-==============================
-Using common PureMVC and Gaia framework conventions. A good starting point for AngularJS projects.
+# angular-boilerplate
 
-## Script overview
+This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
+version 0.12.1.
 
 ## Build & development
 
