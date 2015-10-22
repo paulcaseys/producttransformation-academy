@@ -27,7 +27,7 @@ $base-width: if($is-fluid, 100%, ($base-col-width + $base-gutter-width) * $base-
 
 $font-size: 15px;  // default font size. Change here will adjust sizes across the board.
 $font-weight: 400; // sets the font weight
-$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; // default fonts
+$font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; // default fonts
 $font-color: #222;  // default font color
 
 $heading-family: $font-family; // default heading (h1-h6) font
