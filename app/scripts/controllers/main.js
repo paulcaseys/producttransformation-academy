@@ -10,7 +10,7 @@
 angular.module('angularBoilerplateApp')
   .controller('MainCtrl', function () {
 
-
+    
     var el = this;
 
     // initialises on view
@@ -36,17 +36,20 @@ angular.module('angularBoilerplateApp')
     el.transitionIn = function(){
         // basic way to hide element
         //$(this.el).hide();
-    },
+    };
 
     // removes all eventlisteners
     el.transitionOut = function(){
         // basic way to hide element
         //$(this.el).hide();
-    },
+    };
 
 
     // inits it all
     el.init();
+
+
+
 
 
   });
