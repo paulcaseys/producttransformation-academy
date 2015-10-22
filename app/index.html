@@ -18,12 +18,12 @@
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css"> 
     <!-- build:css(.tmp) styles/skeleton.css -->   
     <link rel="stylesheet" href="styles/skeleton.css">
     <!-- build:css(.tmp) styles/normalize.css -->   
     <link rel="stylesheet" href="styles/normalize.css">
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css"> 
     <!-- endbuild -->
   </head>
   <body ng-app="angularBoilerplateApp">
@@ -32,12 +32,12 @@
     <![endif]-->
 
 
-  <nav class="navbar">
+  <nav class="navbar" id="menu">
 
     <div class="container">
       
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#/">home</a></li>
+        <li><a href="#/">home</a></li>
         <li><a ng-href="#/about">about</a></li>
       </ul>
 
@@ -54,9 +54,16 @@
     </div>
   </div>
 
-    <div class="footer">
+
+
+    <div class="footer" id="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> footer</p>
+          
+        <ul class="nav navbar-nav">
+          <li>prototype</li>
+          <li>blog</li>
+        </ul>
+
       </div>
     </div>
 
