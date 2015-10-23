@@ -31,13 +31,12 @@
     <![endif]-->
 
 
-  <nav class="navbar" id="menu">
+  <nav ng-controller="NavigationController" class="navbar" id="menu">
 
     <div class="container">
       
-      <ul class="nav navbar-nav">
-        <li><a href="#/">home</a></li>
-        <li><a ng-href="#/about">about</a></li>
+      <ul class="navigations nav navbar-nav">
+        <li ng-repeat="item in items" class="item" ng-class="{'active': item.id == states.activeItem}" ng-click="states.activeItem=item.id"><a href="{{item.path}}" >{{item.title}}</a></li>
       </ul>
 
     </div>
@@ -101,6 +100,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/navigation.js"></script>
         <!-- endbuild -->
 </body>
 </html>
