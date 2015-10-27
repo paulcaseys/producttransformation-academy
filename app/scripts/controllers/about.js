@@ -8,7 +8,7 @@
  * Controller of the angularBoilerplateApp
  */
 angular.module('angularBoilerplateApp')
-  .controller('AboutCtrl', function () {
+  .controller('AboutCtrl', function ($scope) {
 
 
     var el = this;
@@ -17,6 +17,10 @@ angular.module('angularBoilerplateApp')
     el.init = function(){
         // logs the view
         el.testMethod();
+        
+        $scope. description = "This is the about page";
+        $scope.oldAddress = "111 Bourke St, Melbourne, Victoria";
+        $scope.newAddress = "12 Kiribilli Ave, Kiribilli, NSW, Australia";
 
     };
 
