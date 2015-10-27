@@ -2,14 +2,17 @@
 
 /**
  * @ngdoc function
- * @name angularBoilerplateApp.controller:MainCtrl
+ * @name angularBoilerplateApp.controller:LoaderCtrl
  * @description
- * # MainCtrl
+ * # LoaderCtrl
  * Controller of the angularBoilerplateApp
  */
 angular.module('angularBoilerplateApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('LoaderCtrl', function ($scope) {
     
+    $scope.loader = {};
+    $scope.loader.loaded = true;
+
     var el = this;
 
     // initialises on view
@@ -22,7 +25,7 @@ angular.module('angularBoilerplateApp')
 
     // method for the console
     el.testMethod = function(){
-       console.log('MainCtrl testMethod');
+       console.log('LoaderCtrl testMethod');
     };
 
 
@@ -46,8 +49,6 @@ angular.module('angularBoilerplateApp')
 
     // inits it all
     el.init();
-
-
 
 
 

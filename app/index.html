@@ -30,40 +30,47 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-
-  <nav ng-controller="NavigationController" class="navbar" id="menu">
-
-    <div class="container">
-      
-      <ul class="navigations nav navbar-nav">
-        <li ng-repeat="item in items" class="item" ng-class="{'active': item.id == states.activeItem}" ng-click="states.activeItem=item.id"><a href="{{item.path}}" >{{item.title}}</a></li>
-      </ul>
-
-    </div>
-
-  </nav>
-
-
-
-
-  <div class="section">
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
+  <div ng-controller="LoaderCtrl" ng-hide="loader.loaded" class="loading" >
+    Loading...
   </div>
 
+  <div class="ng-cloak" >
 
+    <nav ng-controller="NavigationController" class="navbar" id="menu">
 
-    <div class="footer" id="footer">
       <div class="container">
-          
-        <ul class="nav navbar-nav">
-          <li>angular prototype with skeleton boilerplate</li>
+        
+        <ul class="navigations nav navbar-nav">
+          <li ng-repeat="item in items" class="item" ng-class="{'active': item.id == states.activeItem}" ng-click="states.activeItem=item.id"><a href="{{item.path}}" >{{item.title}}</a></li>
         </ul>
 
       </div>
+
+    </nav>
+
+
+
+
+    <div class="section">
+      <div class="container">
+      <div ng-view=""></div>
+      </div>
     </div>
 
+
+
+      <div class="footer" id="footer">
+        <div class="container">
+            
+          <ul class="nav navbar-nav">
+            <li>angular prototype with skeleton boilerplate</li>
+          </ul>
+
+        </div>
+      </div>
+
+  
+  </div>
 
 
 </head>
@@ -98,6 +105,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/loader.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/navigation.js"></script>
