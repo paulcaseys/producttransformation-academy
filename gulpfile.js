@@ -24,7 +24,7 @@ gulp.task('webpack:vendor', function() {
 });
 
 gulp.task('webpack', function() {
-  return gulp.src('app/scripts/entry.js')
+  return gulp.src('app/scripts/app.js')
     .pipe(webpack({
       module: {
         loaders: [
@@ -43,18 +43,18 @@ gulp.task('webpack', function() {
 
 // Html
 gulp.task('html:dev', function() {
-  return gulp.src(TMP_DIR + 'views/index.html')
+  return gulp.src(TMP_DIR + 'app/index.html')
     .pipe(gulp.dest(TMP_DIR))
     .pipe($.browserSync.reload({stream:true}));
 });
 
 gulp.task('html:dist', function() {
-  return gulp.src(BUILD_DIR + 'views/index.html')
+  return gulp.src(BUILD_DIR + 'app/index.html')
     .pipe(gulp.dest(BUILD_DIR))
 });
 
 // Sass
-/*gulp.task('sass', function () {
+gulp.task('sass', function () {
   return $.rubySass('app/styles/main.scss', { sourcemap: true })
     .on('error', function (err) {
       console.error('Error!', err.message);
@@ -62,7 +62,7 @@ gulp.task('html:dist', function() {
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest(TMP_DIR + 'styles'))
     .pipe($.browserSync.reload({stream:true}));
-});*/
+});
 
 // Images
 gulp.task('images', function () {
