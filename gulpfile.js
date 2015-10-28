@@ -139,10 +139,14 @@ gulp.task('default', ['serve:dev'], function() {
 });
 
 gulp.task('deps', ['html:dist'], function () {
+
+
   var assets = $.useref.assets();
 
   return gulp.src([BUILD_DIR + 'index.html'])
     // Concatenates asset files from the build blocks inside the HTML
+    
+    
     .pipe(assets)
     // Appends hash to extracted files app.css → app-098f6bcd.css
     .pipe($.rev())
@@ -164,10 +168,13 @@ gulp.task('deps', ['html:dist'], function () {
       spare: true,
       quotes: true
     })))
+    
+    
     // Creates the actual files
     .pipe(gulp.dest(BUILD_DIR))
     // Print the file sizes
     .pipe($.size({ title: BUILD_DIR, showFiles: true }));
+    
 });
 
 // Distribution
