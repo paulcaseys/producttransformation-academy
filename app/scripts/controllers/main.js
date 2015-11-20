@@ -10,7 +10,9 @@
 angular.module('angularBoilerplateApp')
   .controller('MainCtrl', function ($scope) {
     
-    console.log($scope+" MainCtrl");
+
+    
+    console.log("MainCtrl", $scope);
 
 
   });
