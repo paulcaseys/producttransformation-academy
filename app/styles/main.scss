@@ -137,3 +137,21 @@ h1 {
     opacity: 1;
   }
 }
+
+.about .big-block {
+  float: left;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: #ededed;
+  border: solid 4px #fefefe;
+}
+
+// waypoint
+.about .waypoint-trigger {
+  opacity: 0;
+}
+.about .waypointTransitionIn {
+  //$delay, $duration, $iteration, $animation, $speed-curve
+  @include animation(0s, 2s, 1, fadeInAnimation, 'ease-out');
+}

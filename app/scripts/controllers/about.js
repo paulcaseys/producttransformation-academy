@@ -20,35 +20,56 @@ angular.module('angularBoilerplateApp')
     // declares that the transition in should begin
     $scope.transitionIn = true;
 
+
+
     ///////////////////////////////////
     // waypoint detection
     // 
+    
     // declares self
-    /* var self = this;
+    var self = this;
+    self.yOffset = 50;
+    self.waypointAddTransitionInClass = "waypointTransitionIn";
+    self.waypointElements = document.getElementsByClassName('waypoint-trigger');
+
+    self.isTouchDevice = function() {
+      try {  
+        document.createEvent("TouchEvent");  
+        return true;  
+      } catch (e) {  
+        return false;  
+      }  
+    };
+
+    // declares if the browser is a touch device
+    self.isTouchDeviceOn = self.isTouchDevice();
+
+    // declares brwoser height
+    self.browserHeight = 0;
+    if( typeof( window.innerWidth ) === 'number' ) {
+      //Non-IE
+      self.browserHeight = window.innerHeight;
+    } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+      //IE 6+ in 'standards compliant mode'
+      self.browserHeight = document.documentElement.clientHeight;
+    }
+
+
     self.detectWaypoint = function() {
-      
-      howItWorksY = self.getElementOffset(howItWorksElement[0]).top;      
-      if(howItWorksY < yOffset && howItWorksInitiated === false || self.isTouchDevice() === true){
-        console.log("pop1");
-        self.howItWorksInit();
-        howItWorksInitiated = true;
-        $scope.$apply();
-      }
-      featuresY = self.getElementOffset(featuresElement[0]).top;      
-      if(featuresY < yOffset && featuresInitiated === false || self.isTouchDevice() === true){
-        console.log("pop2");
-        self.featuresInit();
-        featuresInitiated = true;
-        $scope.$apply();
+      console.log("detect");
+      self.wi = 0;
+      for (self.wi = 0; self.wi < self.waypointElements.length; self.wi++) { 
+        self.curElement = self.waypointElements[self.wi];
+        self.curElement.topDetector = self.getElementOffset(self.curElement).top;
+        if(self.curElement.topDetector-self.browserHeight+self.yOffset < 0 && !self.curElement.initiated || self.isTouchDeviceOn && !self.curElement.initiated){
+          self.curElement.initiated = true;
+          self.curElement.className = self.curElement.className + " " + self.waypointAddTransitionInClass;
+          console.log("waypoint", self.curElement);
+        }
       }
 
     };
-    // upon scrolls
-    window.onscroll = function () {  
-      self.detectWaypoint();
-      console.log("hhh");
-    };
-
+    // gets how far the element is from the top of the browser
     self.getElementOffset = function(el) {
         var _x = 0;
         var _y = 0;
@@ -60,17 +81,20 @@ angular.module('angularBoilerplateApp')
         return { top: _y, left: _x };
     };
 
-    self.isTouchDevice = function() {
-      try {  
-        document.createEvent("TouchEvent");  
-        return true;  
-      } catch (e) {  
-        return false;  
-      }  
+    // upon scrolls
+    window.onscroll = function () {  
+      self.detectWaypoint();
     };
+    // initial call when ready
+    angular.element(document).ready(function () {
+      self.detectWaypoint();
+    });
 
-    setTimeout(self.detectWaypoint, 1000);
-    */
+    // removing onscroll event when the view is removed
+    $scope.$on("$destroy",function() {
+      window.onscroll = null;
+    });
+    
 
   });
 
