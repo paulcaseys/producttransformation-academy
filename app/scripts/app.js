@@ -29,6 +29,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/waypointexample', {
+        templateUrl: 'views/waypointexample.html',
+        controller: 'WaypointExampleCtrl',
+        controllerAs: 'waypointexample'
+      })
       .otherwise({
         redirectTo: '/'
       });

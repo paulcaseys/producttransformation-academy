@@ -114,6 +114,19 @@ h1 {
 
 
 //////////////////////////////////////
+// ANIMATION
+
+// animation keyframe
+@include keyframes(fadeInAnimation) { 
+  0%   { 
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }
+}
+
+//////////////////////////////////////
 // ABOUT PAGE
 
 // transition example for about page
@@ -128,17 +141,23 @@ h1 {
   @include animation(1s, 2s, 1, fadeInAnimation, 'ease-out');
 }
 
-// animation keyframe
-@include keyframes(fadeInAnimation) { 
-  0%   { 
-    opacity: 0;
-  }
-  100% { 
-    opacity: 1;
-  }
+
+//////////////////////////////////////
+// WAYPOINT EXAMPLE PAGE
+
+// transition example for about page
+.waypointexample.transitionIn h1 {
+  opacity: 0;
+  //$delay, $duration, $iteration, $animation, $speed-curve
+  @include animation(0s, 2s, 1, fadeInAnimation, 'ease-out');
+}
+.waypointexample.transitionIn p {
+  opacity: 0;
+  //$delay, $duration, $iteration, $animation, $speed-curve
+  @include animation(1s, 2s, 1, fadeInAnimation, 'ease-out');
 }
 
-.about .big-block {
+.waypointexample .big-block {
   float: left;
   display: block;
   width: 100%;
@@ -148,10 +167,10 @@ h1 {
 }
 
 // waypoint
-.about .waypoint-trigger {
+.waypointexample .waypoint-trigger {
   opacity: 0;
 }
-.about .waypointTransitionIn {
+.waypointexample .waypointTransitionIn {
   //$delay, $duration, $iteration, $animation, $speed-curve
   @include animation(0s, 2s, 1, fadeInAnimation, 'ease-out');
 }
