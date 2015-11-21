@@ -1,8 +1,66 @@
-// bower:scss
-// endbower
 
 @import "skeleton";
 @import "normalize";
+
+/* mixins to make our lives easier */
+
+@mixin animation($delay, $duration, $iteration, $animation, $speed-curve) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-iteration-count: $iteration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-timing-function: $speed-curve;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-iteration-count: $iteration;
+    -moz-animation-name: $animation;
+    -moz-animation-timing-function: $speed-curve;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-iteration-count: $iteration;
+    -o-animation-name: $animation;
+    -o-animation-timing-function: $speed-curve;
+    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -ms-animation-delay: $delay;
+    -ms-animation-duration: $duration;
+    -ms-animation-iteration-count: $iteration;
+    -ms-animation-name: $animation;
+    -ms-animation-timing-function: $speed-curve;
+    -ms-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-iteration-count: $iteration;
+    animation-name: $animation;
+    animation-timing-function: $speed-curve;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-ms-keyframes #{$animationName} {
+        @content;
+    }
+
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
 
 .browsehappy {
   margin: 0.2em 0;
@@ -38,19 +96,44 @@ h1 {
 }
 
 // menu at top of page
-#menu {  background: #fff;  height: 40px; text-align: right;   overflow: hidden; border-bottom: 1px solid #e1e1e1;}
-#menu ul {  list-style: none;  margin: 0; padding: 0;}
-#menu ul li {  float: left;  margin-right: 20px;}
-#menu ul li a {  font-size: emCalc(12px); color: #777;  line-height: 40px;  text-decoration: none;}
-#menu ul li a:hover {  color: #a55;}
-#menu ul li.active a {  color: #ee9999;}
+.navigation {  background: #fff;  height: 40px; text-align: right;   overflow: hidden; border-bottom: 1px solid #e1e1e1;}
+.navigation ul {  list-style: none;  margin: 0; padding: 0;}
+.navigation ul li {  float: left;  margin-right: 20px;}
+.navigation ul li a {  font-size: emCalc(12px); color: #777;  line-height: 40px;  text-decoration: none;}
+.navigation ul li a:hover {  color: #a55;}
+.navigation ul li.active a {  color: #ee9999;}
 
 
 // menu at top of page
-#footer {  background: #fff;  height: 40px; text-align: right;   overflow: hidden; border-top: 1px solid #e1e1e1;}
-#footer ul {  list-style: none;  margin: 0; padding: 0;}
-#footer ul li {  float: left;  margin-right: 20px;   line-height: 40px; color: #c4c4c4;}
-#footer ul li a {  font-size: emCalc(12px); color: #777;  text-decoration: none;}
-#footer ul li a:hover {  color: #555;}
-#footer ul li a.active {  color: #666;}
+.footer {  background: #fff;  height: 40px; text-align: right;   overflow: hidden; border-top: 1px solid #e1e1e1;}
+.footer ul {  list-style: none;  margin: 0; padding: 0;}
+.footer ul li {  float: left;  margin-right: 20px;   line-height: 40px; color: #c4c4c4;}
+.footer ul li a {  font-size: emCalc(12px); color: #777;  text-decoration: none;}
+.footer ul li a:hover {  color: #555;}
+.footer ul li a.active {  color: #666;}
 
+
+//////////////////////////////////////
+// ABOUT PAGE
+
+// transition example for about page
+.about.transitionIn h1 {
+  opacity: 0;
+  //$delay, $duration, $iteration, $animation, $speed-curve
+  @include animation(0s, 2s, 1, fadeInAnimation, 'ease-out');
+}
+.about.transitionIn p {
+  opacity: 0;
+  //$delay, $duration, $iteration, $animation, $speed-curve
+  @include animation(1s, 2s, 1, fadeInAnimation, 'ease-out');
+}
+
+// animation keyframe
+@include keyframes(fadeInAnimation) { 
+  0%   { 
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }
+}

@@ -10,6 +10,11 @@
 angular.module('angularBoilerplateApp')
   .controller('AboutCtrl', function ($scope) {
 
+
+    $scope.bodyCopy = "hello world";
+
+    $scope.transitionIn = true;
+
     console.log("AboutCtrl", $scope);
 
   });
