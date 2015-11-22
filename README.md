@@ -44,7 +44,7 @@ Build grunt for production
 
 Refer to the grunt installation guide below for more information setting up
 
-## with gulp
+### with gulp
 
 Run gulp while developing
 
