@@ -13,9 +13,6 @@ angular.module('angularBoilerplateApp')
     // Must use a wrapper object, otherwise "activeItem" won't work
     $scope.states = {};
 
-    // determine active item
-    //var active = (viewLocation === $location.path());
-
 
     $scope.items = [{
         id: 'home',
@@ -33,6 +30,11 @@ angular.module('angularBoilerplateApp')
 
     // declare default activeItem
     $scope.states.activeItem = 'home';
+
+    $scope.changePage = function(id){
+        $location.path(id);
+        $scope.states.activeItem = id;
+    };
     
     var path = "#"+$location.path();
     var lookup = {};
