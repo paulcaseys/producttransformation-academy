@@ -85,6 +85,8 @@ h1 {
   display: none !important;
 }
 
+//////////////////////////////////////
+// LOADING SCREEN
 .loading {
   position: fixed;
   z-index: 999;
@@ -98,7 +100,9 @@ h1 {
   right: 0;
 }
 
-// menu at top of page
+//////////////////////////////////////
+// NAVIGATION
+
 .navigation {  background: #fff;  height: 40px; text-align: right;   overflow: hidden; border-bottom: 1px solid #e1e1e1;}
 .navigation ul {  list-style: none;  margin: 0; padding: 0;}
 .navigation ul li { cursor: pointer; float: left;  margin-right: 20px; font-size: emCalc(12px); color: #777;  line-height: 40px;  text-decoration: none;}
@@ -106,7 +110,9 @@ h1 {
 .navigation ul li.active {  color: #ee9999;}
 
 
-// menu at top of page
+//////////////////////////////////////
+// FOOTER
+
 .footer {  background: #fff;  height: 40px; text-align: right;   overflow: hidden; border-top: 1px solid #e1e1e1;}
 .footer ul {  list-style: none;  margin: 0; padding: 0;}
 .footer ul li {  float: left;  margin-right: 20px;   line-height: 40px; color: #c4c4c4; font-size: emCalc(12px); }
@@ -119,9 +125,6 @@ h1 {
 }
 .footer, .footer-push {
     height: 40px; /* .push must be the same height as .footer */
-}
-* {
-    margin: 0;
 }
 
 
