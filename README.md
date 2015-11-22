@@ -99,21 +99,27 @@ System requirements
 ## fixing ruby if you have recently upgraded osx
 
 install rvm
+
    \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 view all versions of ruby
+
    rvm list
 
 remove all versions of ruby
+
    sudo rvm uninstall xxxxxxxx
 
 reinstall the version of ruby
+
    rvm install ruby-2.0.0-p481
 
 set default
+
     rvm --default use ruby-2.0.0-p481
 
 install compass
+
    gem install compass 
 
 ## make sure npm is up to date
@@ -161,19 +167,20 @@ need to run the following in the terminal tab, to exicute any of the default ins
 
 
 ## installing yeoman
-- yeoman is tool with an ecosystem of plugins called generators cthat can be used to scaffold new projects
-- grunt: a javascript runner that helps automate repetitive tasks 
-- bower: a dependency management utility so you no longer have to manually download and manage your front 
+* yeoman is tool with an ecosystem of plugins called generators cthat can be used to scaffold new projects
+* grunt: a javascript runner that helps automate repetitive tasks 
+* bower: a dependency management utility so you no longer have to manually download and manage your front 
 
 install yoeman, grunt, bower, gulp and angular
-	`sudo npm install -g yo bower grunt-cli gulp`
-	`sudo npm install -g generator-karma`
-	`sudo npm install -g generator-angular`
+
+	sudo npm install -g yo bower grunt-cli gulp
+	sudo npm install -g generator-karma
+	sudo npm install -g generator-angular
 
 Creating an app yourself with yoeman
 ====================================
 
-	`yo angular AngularBoilerplate`
+	yo angular AngularBoilerplate
 
 
 ## installing grunt
