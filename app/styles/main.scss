@@ -69,11 +69,14 @@
   padding: 0.2em 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
   padding: 0;
   background-color:#fff;
 }
-
 h1 {
   font-color:#ff0;
 }
@@ -108,6 +111,18 @@ h1 {
 .footer ul {  list-style: none;  margin: 0; padding: 0;}
 .footer ul li {  float: left;  margin-right: 20px;   line-height: 40px; color: #c4c4c4; font-size: emCalc(12px); }
 
+.footer-wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .footer-push {
+    height: 40px; /* .push must be the same height as .footer */
+}
+* {
+    margin: 0;
+}
 
 
 //////////////////////////////////////
