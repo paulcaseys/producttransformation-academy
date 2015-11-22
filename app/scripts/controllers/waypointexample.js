@@ -11,7 +11,7 @@ angular.module('angularBoilerplateApp')
   .controller('WaypointExampleCtrl', function ($scope) {
     
     // logs controller
-    console.log("WaypointExampleCtrl", $scope);
+    console.log("WaypointExampleCtrl");
 
 
     // body copy example
@@ -54,9 +54,7 @@ angular.module('angularBoilerplateApp')
       self.browserHeight = document.documentElement.clientHeight;
     }
 
-
     self.detectWaypoint = function() {
-      console.log("detect");
       self.wi = 0;
       for (self.wi = 0; self.wi < self.waypointElements.length; self.wi++) { 
         self.curElement = self.waypointElements[self.wi];
@@ -67,8 +65,8 @@ angular.module('angularBoilerplateApp')
           console.log("waypoint", self.curElement);
         }
       }
-
     };
+
     // gets how far the element is from the top of the browser
     self.getElementOffset = function(el) {
         var _x = 0;

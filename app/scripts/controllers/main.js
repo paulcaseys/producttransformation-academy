@@ -8,9 +8,9 @@
  * Controller of the angularBoilerplateApp
  */
 angular.module('angularBoilerplateApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function () {
     
-    console.log("MainCtrl", $scope);
+    console.log("MainCtrl");
 
 
   });

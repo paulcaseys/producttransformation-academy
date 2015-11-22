@@ -8,7 +8,7 @@
  * Controller of the angularBoilerplateApp
  */
 angular.module('angularBoilerplateApp')
-  .controller('NavigationController', function ($scope, $location) {
+  .controller('NavigationCtrl', function ($scope, $location) {
     
     // Must use a wrapper object, otherwise "activeItem" won't work
     $scope.states = {};
@@ -55,6 +55,6 @@ angular.module('angularBoilerplateApp')
     });
 
     $scope.changeActiveItem();
-    console.log('NavigationController activeItem : '+$scope.states.activeItem);
+    console.log("NavigationCtrl");
 
 });

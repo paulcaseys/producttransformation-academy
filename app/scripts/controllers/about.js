@@ -11,7 +11,7 @@ angular.module('angularBoilerplateApp')
   .controller('AboutCtrl', function ($scope) {
 
     // logs controller
-    console.log("AboutCtrl", $scope);
+    console.log("AboutCtrl");
 
 
     // body copy example
