@@ -44,6 +44,18 @@ Build grunt for production
 
 Refer to the grunt installation guide below for more information setting up
 
+## with gulp
+
+Run gulp while developing
+
+	grunt dev
+
+Build gulp for production
+
+	gulp prod
+
+Refer to the gulp installation guide below for more information setting up
+
 
 File overview
 ===============
