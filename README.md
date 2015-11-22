@@ -1,7 +1,15 @@
-# angular-boilerplate
+Angular boilerplate
+===================
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
+This boilerplate provides a good starting point for AngularJS projects.
+
+* Most of the functionality is in `app/scripts/`
+* Entrypoint is `app/index.html`
+
+Example
+=======
+
+[Angular boilerplate example](http://paulcasey.net/clients/personal/angular-boilerplate/angular/dist/index.html)
 
 Installation
 ============
@@ -36,6 +44,27 @@ Build grunt for production
 
 Refer to the grunt installation guide below for more information setting up
 
+
+File overview
+===============
+
+`/app/scripts/app.js`
+Configures the angular app and declares where the '#hash' URIs are routed
+
+`/app/scripts/controllers/`
+Project controllers
+
+`/app/scripts/controllers/navigation.js`
+Configures global navigation
+
+`/app/views/`
+Project views or templates
+
+`/app/styles/`
+SCSS files to be compiled by compass
+
+`/app/styles/skeleton.scss`
+Base grid, provided by [skeleton](http://getskeleton.com)
 
 
 System requirements
