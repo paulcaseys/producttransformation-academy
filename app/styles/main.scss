@@ -193,7 +193,12 @@ h1 {
 
 //////////////////////////////////////
 // GALLERY PAGE
-
+.hide {
+  display:none;
+}
+.show {
+  display:block;
+}
 .gallery .item {
   width: 100%;
   float: left;
