@@ -41,7 +41,7 @@
       <nav ng-controller="NavigationCtrl" class="navigation" >
         <div class="container">
           <ul>
-            <li ng-repeat="item in items" class="item" ng-class="{'active': item.id == states.activeItem}" ng-click="changePage(item.id)">{{item.title}}</li>
+            <li ng-repeat="item in items track by $index" class="item" ng-class="{'active': item.id == states.activeItem}" ng-click="changePage(item.id)">{{item.title}}</li>
           </ul>
         </div>
       </nav>
