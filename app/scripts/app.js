@@ -29,10 +29,15 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/waypointexample', {
-        templateUrl: 'views/waypointexample.html',
-        controller: 'WaypointExampleCtrl',
-        controllerAs: 'waypointexample'
+      .when('/waypoint', {
+        templateUrl: 'views/waypoint.html',
+        controller: 'WaypointCtrl',
+        controllerAs: 'waypoint'
+      })
+      .when('/gallery', {
+        templateUrl: 'views/gallery.html',
+        controller: 'GalleryCtrl',
+        controllerAs: 'gallery'
       })
       .otherwise({
         redirectTo: '/'

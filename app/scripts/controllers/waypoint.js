@@ -2,16 +2,16 @@
 
 /**
  * @ngdoc function
- * @name angularBoilerplateApp.controller:WaypointExampleCtrl
+ * @name angularBoilerplateApp.controller:WaypointCtrl
  * @description
- * # WaypointExampleCtrl
+ * # WaypointCtrl
  * Controller of the angularBoilerplateApp
  */
 angular.module('angularBoilerplateApp')
-  .controller('WaypointExampleCtrl', function ($scope) {
+  .controller('WaypointCtrl', function ($scope) {
     
     // logs controller
-    console.log("WaypointExampleCtrl");
+    console.log("WaypointCtrl");
 
 
     // body copy example

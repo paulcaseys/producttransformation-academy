@@ -160,18 +160,18 @@ h1 {
 // WAYPOINT EXAMPLE PAGE
 
 // transition example for about page
-.waypointexample.transitionIn h1 {
+.waypoint.transitionIn h1 {
   opacity: 0;
   //$delay, $duration, $iteration, $animation, $speed-curve
   @include animation(0s, 2s, 1, fadeInAnimation, 'ease-out');
 }
-.waypointexample.transitionIn p {
+.waypoint.transitionIn p {
   opacity: 0;
   //$delay, $duration, $iteration, $animation, $speed-curve
   @include animation(1s, 2s, 1, fadeInAnimation, 'ease-out');
 }
 
-.waypointexample .big-block {
+.waypoint .big-block {
   float: left;
   display: block;
   width: 100%;
@@ -181,10 +181,30 @@ h1 {
 }
 
 // waypoint
-.waypointexample .waypoint-trigger {
+.waypoint .waypoint-trigger {
   opacity: 0;
 }
-.waypointexample .waypointTransitionIn {
+.waypoint .waypointTransitionIn {
   //$delay, $duration, $iteration, $animation, $speed-curve
   @include animation(0s, 2s, 1, fadeInAnimation, 'ease-out');
 }
+
+
+
+//////////////////////////////////////
+// GALLERY PAGE
+
+.gallery .item {
+  width: 100%;
+  float: left;
+  display: block;
+}
+.gallery p {
+  text-transform: lowercase;
+}
+@media (min-width: $primary-breakpoint-min) {
+  .gallery .item {
+    width: 50%;
+  }
+}
+

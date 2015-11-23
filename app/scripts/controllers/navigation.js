@@ -23,9 +23,13 @@ angular.module('angularBoilerplateApp')
         title: 'About',
         path: '#/about'
     }, {
-        id: 'waypointexample',
-        title: 'Waypoint example',
-        path: '#/waypointexample'
+        id: 'waypoint',
+        title: 'Waypoint',
+        path: '#/waypoint'
+    }, {
+        id: 'gallery',
+        title: 'Gallery',
+        path: '#/gallery'
     }];
 
     // declare default activeItem
