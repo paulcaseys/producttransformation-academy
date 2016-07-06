@@ -38,12 +38,21 @@
 
     <div class="ng-cloak" >
 
-      <nav ng-controller="NavigationCtrl" class="navigation" >
-        <div class="container">
-          <ul>
-            <li ng-repeat="item in items track by $index" class="item" ng-class="{'active': item.id == states.activeItem}" ng-click="changePage(item.id)">{{item.title}}</li>
-          </ul>
-        </div>
+      <nav ng-controller="NavigationCtrl" class="menu navbar">
+
+          <div class="container">
+
+              <div class="logo">
+                  <h2>Australia Post</h2>
+              </div>
+
+
+              <ul class="navigations nav">
+                  <li ng-repeat="item in items" class="item" ng-click="anchor(item.id)" ><a href="{{item.path}}" tabindex="-1" >{{item.title}}</a></li>
+              </ul>
+
+          </div>
+
       </nav>
 
       <div class="section">

@@ -109,7 +109,7 @@ h1 {
 
 .navigation {  background: #fff;  height: 90px; text-align: right;   overflow: hidden; border-bottom: 1px solid #e1e1e1;}
 .navigation ul {  list-style: none;  margin: 0; padding: 0;}
-.navigation ul li { float: left;  margin-right: 20px; font-size: emCalc(24px); color: #777;  line-height: 90px;  text-decoration: none;}
+.navigation ul li { float: left;  margin-right: 20px; font-size: emCalc(12px); color: #777;  line-height: 90px;  text-decoration: none;}
 .navigation ul li.active {  color: #ee9999;}
 
 
@@ -581,27 +581,7 @@ body {
   font-family: 'ap_letter', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5 {
-  font-family: 'ap_letter';  
-  color: #382f2d;
-}
 
-h1 {
-  font-size: 32px;
-}
-h2 {
-  font-size: 20px;
-}
-h3 {
-  font-size: 15px;
-}
-h4 {
-  font-size: 12px;
-}
 
 [ng\:cloak], 
 [ng-cloak], 
@@ -637,7 +617,7 @@ h4 {
 .menu ul li a:hover {  color: #dc1928;}
 .menu ul li.active a {  color: #dc1928;}
 .menu .logo { float: left }
-.menu .logo-image { width: 100px; height: 30px; margin-top: 12px; }
+.menu .logo h2 { line-height: 50px; color: #DC1928;  }
 
 
 // strap information about trial
@@ -885,10 +865,10 @@ h2 {
   font-size: 20px;
 }
 h3 {
-  font-size: 15px;
+  font-size: 18px;
 }
 h4 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 
@@ -1144,14 +1124,13 @@ h4 {
 
   // menu
   .menu { 
-    position: fixed; 
     width: 100%; 
     z-index: 9999; 
     background: #fff;  
     height: 80px; 
   }
   .menu ul { display: block;}
-  .menu .logo-image { margin-top: 25px; }
+  .menu .logo h2 { line-height: 80px; }
 
   // strap information about trial
   .trial-strap {
