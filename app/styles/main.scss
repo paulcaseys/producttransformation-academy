@@ -81,9 +81,6 @@ body {
   padding: 0;
   background-color:#fff;
 }
-h1 {
-  font-color:#ff0;
-}
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
@@ -653,203 +650,10 @@ body {
 }
 
 
-// screen-introduction over top of introduction
-.screen-introduction {
-  display: none;
+p, li {
+  font-size: 14px;
+  list-style-type: disc;
 }
-
-.screen-introduction .screen {  
-  height: 600px;
-  width: 100%;
-}
-
-.screen-introduction .intro-content-animated {
-  opacity: 0; 
-}
-.screen-introduction .intro-content-animated.introFadeIn {
-  opacity: 1;
-}
-
-
-// introduction
-
-
-.introduction {
-  text-align: left;
-  padding: 0 7%;
-  background: #99d9f0;
-}
-
-
-.introduction h1.first-line {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 32px;
-  opacity: 0;
-}
-
-.introduction h1.first-line.introFadeInFromRight {
-  opacity: 1;
-}
-
-.introduction h1.second-line {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  color: #dc1928;
-  font-size: 32px;
-  opacity: 0; 
-}
-.introduction .intro-content-animated {
-  opacity: 0; 
-}
-.introduction .intro-content-animated.introFadeIn {
-  opacity: 1;
-}
-
-.introduction h1.second-line.introFadeInFromRight {
-  opacity: 1;
-}
-
-.introduction p {
-  font-size: 15px;
-  color: #382f2d;
-}
-.introduction p.intro {
-  padding: 0px 0px;
-}
-.introduction .button-jumbo {
-  font-size: 18px;
-  padding-left: 25px;
-  padding-right: 25px;
-  height: 44px;
-  line-height: 43px;
-  font-weight: 200;
-  margin-top: 6px;
-}
-.introduction .last-row {
-  margin-top: 5px;
-  margin-bottom: 40px;
-}
-.introduction .login:hover {
-  text-decoration: underline;
-}
-.introduction .car-wrapper {
-  width: 100%;
-  text-align: center;
-  float: right;
-  margin-top: 20px;
-}
-.introduction .car-wrapper.introCarFadeIn {
-  opacity: 1;
-}
-.intro-content{
-  background: url("../images/House.svg") no-repeat; 
-  background-position: 50% 100%;
-}
-
-
-// how it works
-.how-it-works {
-  margin-top: 30px;
-  text-align: center;  
-}
-
-.how-it-works .marketing-info {
-  text-align: center;
-}
-
-
-.how-it-works p.call-out {
-  font-size: 15px;
-  color: #807370;
-  padding-left: 10%;
-  padding-right: 10%;
-  line-height: 22px;
-}
-.how-it-works h2 {
-  margin-top: 10px;
-}
-.how-it-works .img1 {
-  width: 110px;
-  height: 110px;
-}
-.how-it-works .img2 {
-  width: 120px;
-  height: 110px;
-}
-.how-it-works .img3 {
-  width: 110px;
-  height: 110px;
-}
-
-// who 
-.who {
-  margin-top: 30px;
-  background-color: #ece9e4;
-  padding: 30px 10% 30px 10% ;
-  text-align: center;
-}
-.who .logo-cell {
-  background-color: #fff;
-  height: 85px;
-  width: 32.5%;
-  border: solid 1px #ece9e4;
-  float: left;
-  color: #c3c3c3;
-}
-.who .logo-cell img {
-  margin-top: 10px;
-  width: 60px;
-  height: 60px;
-}
-.who h1 {
-  margin-bottom: 50px;
-}
-
-
-// features
-.features {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;  
-}
-.features .marketing-info {
-  text-align: center;
-}
-.features p.call-out {
-  font-size: 15px;
-  color: #807370;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-bottom: 30px;
-  line-height: 22px;
-}
-.features h2 {
-  margin-top: 20px;
-}
-.features img {
-  width: 90px;
-  height: 90px;
-}
-
-
-
-// footer image
-.city {
-  background: url("../images/City.png") no-repeat center;
-  width: 100%;
-  height: 220px;
-  background-size: 1300px 220px;
-}
-
-
-// hide account login
-.hide-account-login {
-  display: none;
-}
-
-
-// dashboard
 h1, 
 h2, 
 h3, 
@@ -870,6 +674,79 @@ h3 {
 h4 {
   font-size: 16px;
 }
+
+
+// introduction
+
+
+.introduction {
+  text-align: center;
+  background: #F9F8F7;
+  padding: 70px 0px;
+}
+
+.introduction h1 {
+  text-align: center;
+}
+
+
+// panel-one
+.panel-one {
+  background: #ECB73F;
+  padding: 70px 0px; 
+}
+
+// panel-two
+.panel-two {
+  background: #FFFFFF;
+  padding: 70px 0px; 
+  text-align: center;
+}
+
+// panel-three
+.panel-three {
+  background: #8177E7;
+  padding: 70px 0px; 
+  color: #ffffff;
+}
+.panel-three h1 {
+  color: #ffffff;
+}
+
+// panel-four
+.panel-four {
+  background: #009FDA;
+  padding: 70px 0px; 
+  text-align: center;
+  color: #ffffff;
+}
+.panel-four h1 {
+  color: #ffffff;
+}
+
+// panel-five
+.panel-five {
+  background: #F9F8F7;
+  padding: 70px 0px; 
+}
+
+// panel-six
+.panel-six {
+  background: #00C1AA;
+  padding: 70px 0px; 
+}
+
+// panel-seven
+.panel-seven {
+  background: #FFFFFF;
+  padding: 70px 0px; 
+}
+
+// hide account login
+.hide-account-login {
+  display: none;
+}
+
 
 
 // dashboard promo bar
@@ -1066,48 +943,12 @@ h4 {
   
     
 
-  .trial-strap.strapIn {
-    height: 0px;
-    //$delay, $duration, $iteration, $animation, $speed-curve
-    @include animation(0s, 0.2s, 1, strapInAnimation, 'ease-out');
-  }
-  .screen-introduction .intro-content-animated.introFadeIn {
-    opacity: 0;
-    //$delay, $duration, $iteration, $animation, $speed-curve
-    @include animation(1.5s, 2s, 1, introFadeInAnimation, 'ease-out');
-  }
-  .introduction h1.first-line.introFadeInFromRight {
-    opacity: 0;
-    //$delay, $duration, $iteration, $animation, $speed-curve
-    @include animation(0.2s, 1s, 1, introFadeInFromRightAnimation, 'ease-out');
-  }
-  .introduction h1.second-line.introFadeInFromRight {
-    opacity: 0;
-    //$delay, $duration, $iteration, $animation, $speed-curve
-    @include animation(0.7s, 1s, 1, introFadeInFromRightAnimation, 'ease-out');
-  }
-
-  .introduction .intro-content-animated.introFadeIn {
-    opacity: 0;
-    //$delay, $duration, $iteration, $animation, $speed-curve
-    @include animation(1s, 2s, 1, introFadeInAnimation, 'ease-out');
-  }
-
-  .introduction .intro-content-animated.introFadeIn {
-    opacity: 0;
-    //$delay, $duration, $iteration, $animation, $speed-curve
-    @include animation(1s, 2s, 1, introFadeInAnimation, 'ease-out');
-  }
-
-  .introduction .car-wrapper.introCarFadeIn {
-    opacity: 0;
-    //$delay, $duration, $iteration, $animation, $speed-curve
-    @include animation(2s, 2s, 1, introCarFadeInAnimation, 'ease-out');
-  }
-
-
 
   // main style 
+  p, li {
+    font-size: 18px;
+    list-style-type: disc;
+  }
   h1 {
     font-size: 32px;
     padding-bottom: 10px;
@@ -1146,71 +987,10 @@ h4 {
     display: none;
   }
 
-  // screen introduction
-  .screen-introduction .screen {  
-    height: 600px;
-    width: 100%;
-    margin-top: 150px;
-  }
-  .screen-introduction .screen-image {  
-    height: 600px;
-    width: 100%;
-    float: right;
-    background: url("../images/Screen-Shot.png") no-repeat;
-    background-position: 100% 50%;
-  }
-
   // introduction
   .introduction {
-    text-align: left;
-    padding: 0px;  
-    background: url("../images/Clouds.svg") 50% 50% repeat #99d9f0;  
   }
-  .screen-introduction {
-    position: absolute;
-    width: 50%;
-    display: block;
-  }
-  .introduction h1.first-line {
-    font-size: 42px;
-    margin-top: 185px;
-    margin-bottom: 0px;
-    line-height: 48px;
-    padding-bottom: 0px;
-  }
-  .introduction h1.second-line {
-    font-size: 42px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    color: #dc1928;
-  }
-  .introduction p {
-    font-size: 18px;
-  }
-  .introduction p.intro {
-    width: 75%;
-    margin-bottom: 25px;
-    padding: 0px 0px;
-  }
-  .introduction .button-jumbo {
-    font-size: 18px;
-    padding-left: 35px;
-    padding-right: 35px;
-    height: 60px;
-    line-height: 60px;
-    font-weight: 200;
-  }
-  .introduction .last-row {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .introduction .car-wrapper {
-    text-align: right;
-  }
-  .intro-content{
-    background: url("../images/House.svg") no-repeat; 
-    background-position: 100% 100%;
-  }
+
 
   // how it works
   .how-it-works {
