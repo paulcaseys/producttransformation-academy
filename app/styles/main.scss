@@ -653,6 +653,9 @@ body {
 p, div.panel li {
   font-size: 14px;
   list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
 }
 h1, 
 h2, 
@@ -945,9 +948,6 @@ h4 {
   p, div.panel li {
     font-size: 18px;
     list-style-type: disc;
-    list-style-position: inside;
-    text-indent: -1em;
-    padding-left: 1em;
   }
   h1 {
     font-size: 32px;
