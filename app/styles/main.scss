@@ -650,7 +650,7 @@ body {
 }
 
 
-p, li {
+p, div.panel li {
   font-size: 14px;
   list-style-type: disc;
 }
@@ -740,12 +740,9 @@ h4 {
 .panel-seven {
   background: #FFFFFF;
   padding: 70px 0px; 
+  text-align: center;
 }
 
-// hide account login
-.hide-account-login {
-  display: none;
-}
 
 
 
@@ -945,9 +942,12 @@ h4 {
 
 
   // main style 
-  p, li {
+  p, div.panel li {
     font-size: 18px;
     list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
   }
   h1 {
     font-size: 32px;
@@ -992,53 +992,6 @@ h4 {
   }
 
 
-  // how it works
-  .how-it-works {
-    margin-top: 100px; 
-  }
-  .how-it-works p.call-out {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .how-it-works .img1 {
-    width: 120px;
-    height: 130px;
-  }
-  .how-it-works .img2 {
-    width: 140px;
-    height: 130px;
-  }
-  .how-it-works .img3 {
-    width: 140px;
-    height: 130px;
-  }
-
-
-  // who
-  .who {
-    margin-top: 70px;
-    padding: 75px 10% 75px 10% ;
-  }
-
-  // features
-  .features {
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-  .features p.call-out {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .features img {
-    width: 130px;
-    height: 130px;
-  }
-
-  // footer image
-  .city {
-    height: 380px;
-    background-size: 2300px 380px;
-  }
 
 }
 
