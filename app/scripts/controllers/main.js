@@ -92,7 +92,6 @@ angular.module('angularBoilerplateApp')
     $scope.$on("$destroy",function() {
       window.onscroll = null;
     });
-    
 
     
   });

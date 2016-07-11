@@ -20,5 +20,6 @@ angular.module('angularBoilerplateApp')
     // declares that the transition in should begin
     $scope.transitionIn = true;
 
+    
 
   });

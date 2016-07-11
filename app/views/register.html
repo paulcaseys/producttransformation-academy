@@ -1,11 +1,50 @@
-<div class="container">
+<div class="register-bg">
 
-    <div class="register"  ng-class="{transitionIn: transitionIn}">
+    <div class="container">
 
-    	<h1>Register</h1>
-    	<p>
-    	    {{bodyCopy}}
-    	</p>
+        <div class="register"  ng-class="{transitionIn: transitionIn}">
+
+
+            <div class="two columns value">
+                &nbsp;
+            </div>
+
+            <div class="eight columns value">
+
+            	<p>
+            	    We’re still building our website so we’re not quite ready. To help us make it great, please let us know what’s important to you.
+            	</p>
+
+                <div id="cosmos-form-wrapper">Loading form...</div>
+
+                <script type="text/javascript">
+
+                  $(document).ready(function () {
+                    var _cosmosProjectName        = "explorelocalinterest";
+                    var _cosmosProjectPassword    = "9fd44e6fa93a13a32e5a607d8e3f5863";
+                    var _cosmosFormWrapper        = "#cosmos-form-wrapper";
+                    var _cosmosModuleName       = "primary";
+
+                    // sets up the upload details
+                    var _cosmosForm = new Cosmos.Data.newForm();
+                    _cosmosForm.defineProjectSettings(_cosmosProjectName, _cosmosProjectPassword, true);
+                    _cosmosForm.setupForm(_cosmosFormWrapper, {success:formSuccessHandler});
+                    
+                    function formSuccessHandler(){
+                      
+                          }
+
+                  });
+
+                </script>
+
+            </div>
+
+            <div class="two columns value">
+                &nbsp;
+            </div>
+
+        </div>
 
     </div>
 
