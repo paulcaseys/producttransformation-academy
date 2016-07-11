@@ -2,16 +2,16 @@
 
 /**
  * @ngdoc function
- * @name angularBoilerplateApp.controller:AboutCtrl
+ * @name angularBoilerplateApp.controller:RegisterCtrl
  * @description
- * # AboutCtrl
+ * # RegisterCtrl
  * Controller of the angularBoilerplateApp
  */
 angular.module('angularBoilerplateApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('RegisterCtrl', function ($scope) {
 
     // logs controller
-    console.log("AboutCtrl");
+    console.log("RegisterCtrl");
 
 
     // body copy example
@@ -21,6 +21,4 @@ angular.module('angularBoilerplateApp')
     $scope.transitionIn = true;
 
 
-
   });
-

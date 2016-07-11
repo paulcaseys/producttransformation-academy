@@ -30,10 +30,6 @@ angular.module('angularBoilerplateApp')
         id: 'gallery',
         title: 'Gallery',
         path: '#/gallery'
-    }, {
-        id: 'register',
-        title: 'Register',
-        path: '#/register'
     }];
 
     // declare default activeItem

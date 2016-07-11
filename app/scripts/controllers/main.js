@@ -8,9 +8,18 @@
  * Controller of the angularBoilerplateApp
  */
 angular.module('angularBoilerplateApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function ($scope) {
     
     console.log("MainCtrl");
+
+
+
+    // body copy example
+    $scope.bodyCopy = "hello world";
+
+    // declares that the transition in should begin
+    $scope.transitionIn = true;
+
 
 
     ///////////////////////////////////
@@ -19,7 +28,7 @@ angular.module('angularBoilerplateApp')
     
     // declares self
     var self = this;
-    self.yOffset = 200;
+    self.yOffset = 50;
     self.waypointAddTransitionInClass = "waypointTransitionIn";
     self.waypointElements = document.getElementsByClassName('waypoint-trigger');
 
@@ -83,5 +92,7 @@ angular.module('angularBoilerplateApp')
     $scope.$on("$destroy",function() {
       window.onscroll = null;
     });
+    
 
+    
   });
