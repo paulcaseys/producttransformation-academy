@@ -834,6 +834,11 @@ h4 {
   border-color: #DC1928 !important;
   margin-left: 10px;
 }
+.register-bg.transitionIn  {
+  opacity: 0;
+  //$delay, $duration, $iteration, $animation, $speed-curve
+  @include animation(0.5s, 2s, 1, fadeInAnimation, 'ease-out');
+}
 
 
 // dashboard promo bar
