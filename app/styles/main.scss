@@ -686,13 +686,13 @@ h4 {
 
 .introduction {
   text-align: center;
-  background: #F9F8F7;
+  background: #F9F8F7; 
   padding: 70px 0px;
 }
 
 .introduction h1 {
   text-align: center;
-  color: #DC1928;
+  /* color: #DC1928; */
   padding: 15px 0px;
 }
 
@@ -789,11 +789,52 @@ h4 {
   padding: 70px 0px; 
   width: 100%;
 }
+.register-bg .top-wrapper {
+  padding: 0px 20px; 
+}
 .register-bg .container {
   background: #ffffff;
-  padding: 70px 0px; 
+  padding: 50px 0px; 
   width: 100%;
 }
+.register-bg hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.register-bg h2 {
+  font-size: 19px !important;
+  letter-spacing: 0 !important;
+  margin-top: 35px !important;
+}
+.register-bg .cosmos-checkbox-text p {
+  margin-left: 20px;
+  color: #807370 !important;
+  font-size: 16px !important;
+  margin-top: 5px;
+}
+.register-bg .cosmos-field {
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  padding: 5px;
+}
+.register-bg .cosmos-field-label {
+  color: #807370 !important;
+  padding: 10px 0px;
+}
+.register-bg .cosmos-item-submit-button {
+  height: 40px !important;
+  padding: 0 30px !important;
+  font-size: 15px !important;
+  border-radius: 4px !important;
+  line-height: 38px;
+  cursor: pointer !important;
+  color: #FFF !important;
+  background-color: #DC1928 !important;
+  border-color: #DC1928 !important;
+  margin-left: 10px;
+}
+
 
 // dashboard promo bar
 
