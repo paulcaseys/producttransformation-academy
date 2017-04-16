@@ -75,11 +75,12 @@ $primary-breakpoint-max: 549px;
 
 html, body {
     height: 100%;
+    background: #F9F8F7; 
 }
 
 body {
   padding: 0;
-  background-color:#fff;
+  //background-color:#fff;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
@@ -686,7 +687,6 @@ h4 {
 
 .introduction {
   text-align: center;
-  background: #F9F8F7; 
   padding: 70px 0px;
 }
 
@@ -703,84 +703,7 @@ h4 {
   padding: 40px 0px; 
   text-align: center;
 }
-.panel-one .image-wrapper {
-  width: 80%;
-}
 
-// panel-two
-.panel-two {
-  background: #FFFFFF;
-  padding: 40px 0px; 
-  text-align: center;
-}
-.panel-two h1 {
-  color: #DC1928;
-}
-
-// panel-three
-.panel-three {
-  background: #8177E7;
-  padding: 40px 0px; 
-  color: #ffffff;
-  text-align: center;
-}
-.panel-three h1 {
-  color: #ffffff;
-}
-.panel-three .image-wrapper {
-  padding-top: 80px;
-}
-.panel-three .image-wrapper img {
-  width: 90%;
-  float: right;
-}
-
-// panel-four
-.panel-four {
-  background: #009FDA;
-  padding: 40px 0px; 
-  text-align: center;
-  color: #ffffff;
-}
-.panel-four h1 {
-  color: #ffffff;
-}
-.panel-four .image-wrapper {
-  text-align: center;
-}
-.panel-four .image-wrapper img {
-  width: 65%;
-}
-
-// panel-five
-.panel-five {
-  background: #F9F8F7;
-  padding: 40px 0px; 
-  text-align: center;
-}
-.panel-five h1 {
-  padding-top: 30px;
-}
-.panel-five .image-wrapper {
-  text-align: center;
-}
-.panel-five .image-wrapper img {
-  width: 65%;
-}
-
-// panel-six
-.panel-six {
-  background: #00C1AA;
-  padding: 40px 0px; 
-  text-align: center;
-}
-
-// panel-seven
-.panel-seven {
-  background: #FFFFFF;
-  padding: 70px 0px; 
-  text-align: center;
-}
 
 
 // register-bg
@@ -1039,73 +962,6 @@ h4 {
   .panel-one {
     padding: 70px 0px; 
     text-align: left;
-  }
-  .panel-one .image-wrapper {
-    width: 80%;
-  }
-
-  // panel-two
-  .panel-two {
-    padding: 70px 0px 0px 0px; 
-    text-align: center;
-  }
-  .panel-two .container {
-    background: url("../assets/images/2nd_panel.png") no-repeat;
-    background-size: contain;
-    background-position: center; 
-    padding-bottom: 300px;
-  }
-
-  // panel-three
-  .panel-three {
-    padding: 70px 0px; 
-    text-align: left;
-  }
-  .panel-three .image-wrapper {
-    padding-top: 80px;
-  }
-  .panel-three .image-wrapper img {
-    width: 90%;
-    float: right;
-  }
-
-  // panel-four
-  .panel-four {
-    padding: 70px 0px; 
-    text-align: center;
-  }
-  .panel-four .image-wrapper {
-    text-align: center;
-  }
-  .panel-four .image-wrapper img {
-    width: 65%;
-  }
-
-  // panel-five
-  .panel-five {
-    padding: 70px 0px; 
-    text-align: left;
-  }
-  .panel-five h1 {
-    padding-top: 30px;
-  }
-  .panel-five .image-wrapper {
-    text-align: center;
-  }
-  .panel-five .image-wrapper img {
-    width: 65%;
-  }
-
-  // panel-six
-  .panel-six {
-    padding: 70px 0px; 
-    text-align: left;
-  }
-
-  // panel-seven
-  .panel-seven {
-    padding: 70px 0px; 
-    text-align: center;
   }
 
 
