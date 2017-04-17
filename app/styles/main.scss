@@ -143,6 +143,26 @@ body {
 }
 
 //////////////////////////////////////
+// MAIN PAGE
+
+// transition example for about page
+.main.transitionIn h1 {
+  opacity: 0;
+  //$delay, $duration, $iteration, $animation, $speed-curve
+  @include animation(0s, 2s, 1, fadeInAnimation, 'ease-out');
+}
+.main.transitionIn p {
+  opacity: 0;
+  //$delay, $duration, $iteration, $animation, $speed-curve
+  @include animation(1s, 2s, 1, fadeInAnimation, 'ease-out');
+}
+.main.transitionIn .button-wrapper {
+  opacity: 0;
+  //$delay, $duration, $iteration, $animation, $speed-curve
+  @include animation(1.5s, 2s, 1, fadeInAnimation, 'ease-out');
+}
+
+//////////////////////////////////////
 // ABOUT PAGE
 
 // transition example for about page
@@ -651,7 +671,7 @@ body {
 }
 
 p {
-  font-size: 14px;
+  font-size: 12px;
 }
 div.panel li {
   font-size: 14px;
@@ -967,7 +987,7 @@ h4 {
 
   // main style 
   p, div.panel li {
-    font-size: 18px;
+    font-size: 14px;
     list-style-type: disc;
   }
   h1 {
